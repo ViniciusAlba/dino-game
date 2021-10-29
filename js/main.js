@@ -1,10 +1,15 @@
 const ghost = document.querySelector('.ghost');
+let isJumping = false;
 
 function handleKeyUp(event) {
 
     if (event.keyCode === 32) {
 
-        jump();
+        if (!isJumping) {
+
+            jump();
+
+        }
 
     }
 
@@ -13,6 +18,8 @@ function handleKeyUp(event) {
 function jump() {
 
     let position = 0;
+
+    isJumping = true;
 
     let upInterval = setInterval(() => {
 
@@ -26,7 +33,8 @@ function jump() {
 
                 if (position <= 0) {
 
-                    cleartInterval(downInterval);
+                    clearInterval(downInterval);
+                    isJumping = false;
 
                 } else {
 
