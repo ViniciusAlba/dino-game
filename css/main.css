@@ -5,6 +5,7 @@ body {
     margin: 0;
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: rgb(1, 4, 59);
 }
 
 header {
@@ -41,7 +42,7 @@ header {
 
 .game-over {
     text-align: center;
-    color: #000;
+    color: #FFF;
 }
 
 @keyframes slideright {

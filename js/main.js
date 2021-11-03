@@ -5,6 +5,9 @@ let position = 0;
 let score = document.querySelector('.score');
 let playerScore = 0;
 
+let information = document.querySelector('.information');
+
+
 setInterval(() => {
 
     playerScore += 10;
@@ -84,7 +87,7 @@ function createPumpkins() {
         } else if (pumpkinsPosition > 0 && pumpkinsPosition < 80 && position < 80) {
 
             clearInterval(leftInterval);
-            document.body.innerHTML = '<h1 class="game-over">Fim de jogo</h1>';
+            document.body.innerHTML = `<h1 class="game-over">Game Over!</h1>`;
 
         } else {
 
